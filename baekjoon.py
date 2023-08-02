@@ -161,3 +161,28 @@ while True:
         print(a + b)
     except EOFError:
         break
+
+#27866
+a = input()
+b = int(input())
+print(a[b-1])
+
+#2743
+a = input()
+print(len(a))
+
+#11720
+n = int(input())
+b = input()
+a = list(map(int, b))
+print(sum(a))
+
+#11718
+while(True):
+    try:
+        a = input()
+        if(a==""):
+            break
+        print(a)
+    except:
+        break
