@@ -53,3 +53,27 @@ if(a%4==0 and a%100!=0) or a%400==0:
     print("1")
 else:
     print("0")
+
+#14681
+x = int(input())
+y = int(input())
+
+if (x>0 and y>0): print("1")
+elif (x<0 and y>0): print("2")
+elif (x<0 and y<0): print("3")
+else: print("4")
+
+#2884
+h,m = map(int, input().split())
+
+if m - 45<0 :
+    m = 60-(45-m)
+
+    
+    h = h-1
+    if h<0 :
+        h = 23
+
+elif m-45>=0 :
+    m = m-45
+print(h, m)
