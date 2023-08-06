@@ -195,4 +195,53 @@ for i in range(n):
         print(j*int(a),end="")
     print()
 
+#11382
+a,b,c = map(int, input().split())
+print(a+b+c)
 
+#8393
+n =int(input())
+a=0
+for i in range(1,n+1):
+    a+=i
+print(a)
+
+#18108
+n = int(input())
+n -= 543
+print(n)
+
+#11021
+n = int(input())
+for i in range(n):
+    a,b = map(int, input().split())
+    print("Case #{}: {}".format(i+1, a+b))
+
+#1152
+sen=input().split()         #공백 짤루
+print(len(sen))             #그리고 sen의 길이재서 개수 알수있
+
+#1546
+n = int(input())
+list = list(map(int, input().split()))
+
+a = max(list)
+avg = 0
+
+for i in range(n):
+    avg += (list[i]/a)*100
+
+print(avg/n)
+
+#2884
+h,m = map(int, input().split())
+
+if m - 45<0 :
+    m = 60-(45-m)
+    h = h-1
+    if h<0 :
+        h = 23
+
+elif m-45>=0 :
+    m = m-45
+print(h, m)
