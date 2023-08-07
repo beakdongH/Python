@@ -82,3 +82,57 @@ print(a, b, sep=':')
 //6019
 a, b,c = input().split('.')
 print(c, b,a, sep='-')
+
+//6020
+a, b = input().split('-')
+print(a+b)
+
+//6021
+s = input()
+print(s[0])
+print(s[1])
+print(s[2])
+print(s[3])
+print(s[4])
+
+//6022
+s=input()
+print(s[0:2])
+print(s[2:4])
+print(s[4:6])
+
+//6023
+a,b,c = input().split(':')
+print(b)
+
+//6024
+w1, w2 = input().split()
+s = w1 + w2
+print(s)
+
+//6025
+a, b = input().split()
+c = int(a) + int(b)
+print(c)
+
+//6026
+a = float(input())
+b = float(input())
+print(a+b)
+
+//6027
+a = int(input())
+print('%x'%a)
+
+//6028
+a = int(input())
+print("%X" %a)
+
+//6029
+a = input()
+n = int(a, 16)
+print('%o' % n)  
+
+//6030
+n = ord(input())
+print(n)
