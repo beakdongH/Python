@@ -1,7 +1,6 @@
 ame = int(input("아메리카노 판매 개수"))
 cafe = int(input("카페라떼 판매 개수"))
 capu = int(input("카푸치노 판매개수"))
-
 chong = ame*2000+capu*4000+cafe*3000
 
 print("총매출은",chong,"원입니다")
@@ -1299,3 +1298,88 @@ print(cal.value)
 
 ==============================================================
 
+#colab
+from google.colab import files
+uploaded = files.upload()
+
+#모두
+import csv
+f = open("extremum_20230119104639.csv",'r',encoding=('cp949'))
+data = csv.reader(f,delimiter=',')
+
+for row in data:
+  print(row)
+
+f.close()
+
+==============================================================
+
+#헤더만
+import csv
+f = open("extremum_20230119104639.csv",'r',encoding=('cp949'))
+data = csv.reader(f,delimiter=',')
+
+header = next(data)
+
+for row in data:
+  print(row)
+  
+  row[4] = float(row[4])
+  row[-2] = float(row[-2])
+
+
+f.close()
+
+==============================================================
+
+import csv
+f = open("extremum_20230118104714.csv",'r',encoding=('cp949'))
+data = csv.reader(f,delimiter='.')
+
+header = next(data)
+
+max_temp = -999
+mat_date = ''
+for row in data:
+  if row[5] == '':
+    row[5] = -999
+  row[5] = float(row[5])
+  if mat_temp < row[5]:
+    max_date = row[6]
+    mat_temp = row[5]
+  f.close()
+  import csv
+print("기상 관측 아래 서울의 최고 기온이 가장 높았던 날은 %s로 %.2f였습니다",mat_date, max_temp)
+
+==============================================================
+
+import csv
+f = open("extremum_20230119101035.csv",'r',encoding=('cp949'))
+data = csv.reader(f,delimiter='.')
+
+header = next(data)
+
+result = []
+
+for row in data:
+  if row[5] != '':
+    result.append(float(row[5]))
+print(result)
+
+import matplotlib.pyplot as plt
+plt.plot(result,'r')
+
+plt.title('plotting')
+plt.plot([1,2,3,4],[10,20,30,40], label='acs')
+plt.plot([1,2,3,4],[40,30,20,10], label='dcse')
+plt.legend()
+plt.show()
+
+==============================================================
+
+import matplotlib.pyplot as plt
+plt.plot([1,2,3,4],[10,20,30,40], label='asc')
+plt.plot([1,2,3,4],[40,30,20,10], label='decs')
+plt.show()
+
+==============================================================
