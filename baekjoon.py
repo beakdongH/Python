@@ -245,3 +245,24 @@ if m - 45<0 :
 elif m-45>=0 :
     m = m-45
 print(h, m)
+
+#2562
+nlist = []
+for i in range(9):
+    a =  int(input())
+    nlist.append(a)
+print(max(nlist))
+print(nlist.index(max(nlist))+1)
+
+#10950
+t = int(input())
+for i in range(1,t+1):
+    a,b = map(int, input().split())
+    print(a+b)
+
+#2440
+a = int(input())
+for i in range(1,a+1):
+    print("*"*a)
+    a=a-1
+
