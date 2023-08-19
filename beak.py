@@ -1383,3 +1383,39 @@ plt.plot([1,2,3,4],[40,30,20,10], label='decs')
 plt.show()
 
 ==============================================================
+
+t = ["법사","파이썬 스쿨 선생님",77,80,["타임머신","순간이동","투명변신"]]
+print("인덱스1 :",t[0])
+print("인덱스2 :",t[3])
+print("인덱스3 :",t[-1])
+
+t.append(100)
+t.append("건강")
+print(t)
+
+==============================================================
+
+m = ['장미','벌침','이슬']
+p = ['꿀잠','비행']
+
+if len(m) >= 3 and '장미' in m:
+  print('러브 포션 완성')
+  p.append('러브')
+
+else:
+  print("정체 모를 포션 완성")
+
+for i in p:
+  print("포션 보유중중")
+
+==============================================================
+
+import requests
+from bs4 import BeautifulSoup
+
+url = 'https://weather.naver.com/'
+response = requests.get(url)
+html = response.text
+soup = BeautifulSoup(html, 'html.parser')
+temperature_element = soup.find('strong', class_='current')
+print("Current Temperature:", temperature_element)
