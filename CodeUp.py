@@ -136,3 +136,59 @@ print('%o' % n)
 //6030
 n = ord(input())
 print(n)
+
+//6098
+d=[]
+for i in range(20) :
+  d.append([])
+  for j in range(20) : 
+    d[i].append(0)
+
+for i in range(19) :
+  a = input().split()
+  for j in range(19) :
+    d[i+1][j+1] = int(a[j])
+
+n = int(input())
+for i in range(n) :
+  x,y=input().split()
+  x=int(x)
+  y=int(y)
+  for j in range(1, 20) :
+    if d[j][y]==0 :
+      d[j][y]=1
+    else :
+      d[j][y]=0
+
+    if d[x][j]==0 :
+      d[x][j]=1
+    else :
+      d[x][j]=0
+
+for i in range(1, 20) :
+  for j in range(1, 20) :
+    print(d[i][j], end=' ')
+  print()
+
+//6097
+h,w=map(int,input().split())
+
+b=[]
+for i in range(h+1):
+    b.append([ ])
+    for j in range(w+1):
+        b[i].append(0)
+n = int(input())
+for i in range(n):
+    l,d,x,y = map(int,input().split())
+    if int(d)==0:
+        for j in range(int(l)):
+            b[int(x)][int(y)+j]=1
+    else:
+        for j in range(l):
+            b[int(x)+j][int(y)]=1
+    
+for i in range(1,h+1):
+    for j in range(1,w+1):
+        print(b[i][j], end=' ')
+    print()
