@@ -182,6 +182,10 @@ a=a//3
 print(m.get(a,"winter"))
 
 //6071
+a = int(input())
+while a!=0:
+    a-=1
+    print(a)
 
 //6097
 h,w=map(int,input().split())
