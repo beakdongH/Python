@@ -170,6 +170,19 @@ for i in range(1, 20) :
     print(d[i][j], end=' ')
   print()
 
+//6069
+sc = {'A': 'best!!!', 'B': 'good!!', 'C': 'run!', 'D': 'slowly~'}
+cal = input()
+print(sc.get(cal, 'what?'))
+
+//6070
+m={1:'spring',2:'summer',3:'fall'}
+a=int(input())
+a=a//3
+print(m.get(a,"winter"))
+
+//6071
+
 //6097
 h,w=map(int,input().split())
 
