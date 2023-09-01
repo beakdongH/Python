@@ -69,3 +69,26 @@ IDF = print(1/((Bin(VA)+Bin(VB)+Bin(VC))/3))
 print(IDF)
 #TF*IDF
 print(VA*IDF)
+
+
+
+import numpy as np
+
+a=[1,2,3,4]
+b=[[1,2,3,4],
+   [1,2,2,1]]
+
+A = np.matrix([[1,2],
+               [0,1]])
+B = np.matrix([[1,2],
+               [3,4]])
+C = np.matrix([[3,2],
+               [-4,5]])
+D = np.matrix([[2],
+               [1]])
+I = np.matrix([[1,0],
+               [0,1]])
+
+print(A)
+print(A*I)
+print(I*D)
