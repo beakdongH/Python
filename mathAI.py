@@ -92,3 +92,15 @@ I = np.matrix([[1,0],
 print(A)
 print(A*I)
 print(I*D)
+
+import numpy as np
+
+T = np.matrix([[0,1,0],
+               [0,0,1],
+               [0,0,0]])
+A = np.matrix([[0,0,0],
+               [0,255,0],
+               [0,0,0]])
+
+print(A*T)
+print(T*A)
