@@ -1,6 +1,3 @@
-#2557
-print("Hello World!")
-
 #1000
 a, b = map(int, input().split())
 print(a+b)
@@ -186,7 +183,10 @@ while(True):
         print(a)
     except:
         break
-        
+
+#2557
+print("Hello World!")
+
 #2675
 n = int(input())
 for i in range(n):
