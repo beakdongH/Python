@@ -1419,3 +1419,23 @@ html = response.text
 soup = BeautifulSoup(html, 'html.parser')
 temperature_element = soup.find('strong', class_='current')
 print("Current Temperature:", temperature_element)
+
+==============================================================
+
+#numpy : 다차원 배열 다루기
+
+import numpy as np
+
+list1 = [1,2,3,4]
+list2 = [5,6,7,8]
+list3=[[1,2],[3,4]]
+
+arr1= np.array(list1)
+arr2=np.array(list2)
+
+arr3=np.array(list3)
+print(list1+list2)
+print(arr1+arr2)
+print(arr3*3)
+
+==============================================================
