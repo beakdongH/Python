@@ -184,4 +184,15 @@ for X, i in enumerate([A,B,C]):
   #psrint(H(X,D),"해밍{}번째".format(i))
   print(P(X,C),"퍼셉트론{}번째".format(i))
 
+import pandas as pd
+datalist = [["Weat","S,S,C,R,R,R,C,S,S,R,S,C,C,R".split(",")],
+            ["Temp","H,H,H,N,C,C,C,H,C,N,N,N,H,B".split(",")],
+            ["Exer",[0,0,1,1,1,0,1,0,1,1,1,1,1,0]]]
+
+df = pd.DataFrame.from_dict(dict(datalist))
+#df.groupby("Exer").count()
+#df.groupby("Weat").count()
+#df.groupby(["Temp","Exer"]).count()
+#판다스를 사용해보았다
+
 
