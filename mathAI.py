@@ -9,15 +9,6 @@ B = set("눈,예보,퇴근길,조심".split(","))
 C = set("비,예보,일부,눈,그치다,한파".split(","))
 print(A|B|C)
 
-import numpy as np
-listA = "한파,눈,예보,일부,비".split(",")
-listB = "눈,예보,퇴근길,조심".split(",")
-listC = "비,예보,일부,눈,그치다,한파".split(",")
-
-A = set(listA)
-B = set(listB)
-C = set(listC)
-U = A|B|C
 
 listU = list(U)
 print(listU)
