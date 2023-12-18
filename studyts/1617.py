@@ -1,7 +1,8 @@
-s = input()
-s_re = s[::-1]
-sum = int(s) + int(s_re)
-if str(sum) == str(sum)[-1]:
+n=int(input())
+nre = int(str(n)[::-1])
+sum = n+nre
+sumre = int(str(sum)[::-1])
+if(sum==sumre):
     print("YES")
 else:
     print("NO")

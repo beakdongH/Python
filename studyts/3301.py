@@ -1,30 +1,10 @@
-def mon(n,cnt):
-    global aa cnt
-    if n >= 50000:
-        cnt += 1
-        mon(n % 50000,cnt)
-    elif n >= 10000:
-        cnt += 1
-        mon(n % 10000,cnt)
-    elif n >= 5000:
-        cnt += 1
-        mon(n % 5000,cnt)
-    elif n >= 1000:
-        cnt += 1
-        mon(n % 1000,cnt)
-    elif n >= 500:
-        cnt += 1
-        mon(n % 500,cnt)
-    elif n >= 100:
-        cnt += 1
-        mon(n % 100,cnt)
-    elif n >= 50:
-        cnt += 1
-        mon(n % 50,cnt)
-    elif n >= 10:
-        cnt += 1
-        mon(n % 10,cnt)
+def change(n):
+    cnt = 0
+    arr = [50000, 10000, 5000, 1000, 500, 100, 50, 10]
+    for i in arr:
+        if n//i != 0:
+            cnt+=n//i
+            n=n%i
     return cnt
-
-n = aa(input())
-print(mon(n,0))
+a = int(input())
+print(change(a))
