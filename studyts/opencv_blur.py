@@ -29,4 +29,4 @@ for i in range(6):
     plt.imshow(ress[i],cmap='gray')
     plt.title(titles[i])
     plt.xticks([]),plt.yticks([])
-plt.show()
+plt.show()  
