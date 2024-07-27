@@ -1,15 +1,13 @@
-a = int(input())
+n = int(input())
 
-for i in range(a):
-    result = input()
-    score=0
+for i in range(n):
+    quiz = input()
     cnt=0
-  
-    for j in result:
-        if j =='O':
-            cnt +=1
-            score +=cnt
-        else:
-            cnt = 0
-    
-    print(score)
+    result=0
+    for i in quiz:
+        if(i=='O'):
+            cnt+=1
+        else: cnt=0
+        result+=cnt
+    print(result)
+            
